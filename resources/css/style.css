@@ -1,0 +1,204 @@
+.hotline,
+.form-sign,
+.cart,
+.search {
+    position: relative;
+}
+.hotline::before {
+    position: absolute;
+    content: '';
+    border-width: 20px 8px ;
+    border-style: solid;
+    border-color: transparent #FBBF24 #FBBF24 transparent;
+    bottom: 0px;
+    left: -24px;
+}
+.hotline::after {
+    position: absolute;
+    content: '';
+    border-width: 20px 8px ;
+    border-style: solid;
+    border-color: transparent black black transparent;
+    bottom: 0px;
+    right: 0px;
+}
+
+.form-sign::before {
+    position: absolute;
+    content: '';
+    border-width: 20px 8px ;
+    border-style: solid;
+    border-color: transparent #FBBF24 #FBBF24 transparent;
+    bottom: 0px;
+    left: -32px;
+}
+.form-sign::after {
+    position: absolute;
+    content: '';
+    border-width: 20px 8px ;
+    border-style: solid;
+    border-color: transparent black black transparent;
+    bottom: 0px;
+    right: 0px;
+}
+.cart::before {
+    position: absolute;
+    content: '';
+    border-width: 20px 8px ;
+    border-style: solid;
+    border-color: transparent #FBBF24 #FBBF24 transparent;
+    bottom: 0px;
+    left: -32px;
+}
+.cart::after {
+    position: absolute;
+    content: '';
+    border-width: 20px 8px ;
+    border-style: solid;
+    border-color: transparent black black transparent;
+    bottom: 0px;
+    right: 0px;
+}
+.search:before {
+    position: absolute;
+    content: '';
+    border-width: 20px 8px ;
+    border-style: solid;
+    border-color: transparent #FBBF24 #FBBF24 transparent;
+    bottom: 0px;
+    left: -32px;
+}
+.intro_welcome {
+    font-family: "auguststoriesauguststoriesscript400", sans-serif;
+    font-size: 20px;
+}
+.search .search-input {
+    position: absolute;
+    display: none;
+    width: 100%;
+    background: #999;
+}
+.search .search-input {
+    display: block;
+}
+.search-respon::before {
+    position: absolute;
+    content: '';
+    border-width: 20px 8px ;
+    border-style: solid;
+    border-color: transparent #FBBF24 #FBBF24 transparent;
+    bottom: 0px;
+    left: -16px;
+}
+.search-respon::after {
+    position: absolute;
+    content: '';
+    border-width: 20px 8px ;
+    border-style: solid;
+    border-color: transparent black black transparent;
+    bottom: 0px;
+    right: 0px;
+}
+.white-fill path {
+    fill: white;
+}
+.flex-1 > div {
+    flex: 1 1 auto;
+}
+
+@media (max-width: 768px) {
+    .flex-1 > div {
+        flex: 1 1 100%;
+    }
+}
+
+.swiper-slide img {
+    transition: opacity 0.5s ease-in-out;
+}
+.swiper-slide img.img-hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+}
+.swiper-slide:hover img.img-hover {
+    opacity: 1;
+}
+.swiper-slide:hover img:first-child {
+    opacity: 0;
+}
+.swiper-slide-hot-sale img {
+    transition: opacity 0.5s ease-in-out;
+}
+.swiper-slide-hot-sale img.img-hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+}
+.swiper-slide-hot-sale:hover img.img-hover {
+    opacity: 1;
+}
+.swiper-slide-hot-sale:hover img:first-child {
+    opacity: 0;
+}
+.swiper-slide-pre img {
+    transition: opacity 0.5s ease-in-out;
+}
+.swiper-slide-pre img.img-hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 88%;
+}
+.swiper-slide-pre:hover img.img-hover {
+    opacity: 1;
+}
+.swiper-slide-pre:hover img:first-child {
+    opacity: 0;
+}
+
+.ease-in-out:hover .absolute {
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+}
+.nav:hover .nav_border-b {
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+}
+
+
+/* Animation ánh sáng chạy qua logo*/
+.light-effect {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 215, 100, 0.01), rgba(255, 215, 50, 0.9), rgba(255, 215, 100, 0.01));
+    animation: light-sweep 10s infinite;
+}
+
+@keyframes light-sweep {
+    0% {
+        left: -100%;
+    }
+    20% {
+        left: 100%;
+    }
+    50% {
+        left: 100%;
+    }
+    70% {
+        left: -100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
